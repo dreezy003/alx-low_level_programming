@@ -5,17 +5,17 @@
  */
 int main(void)
 {
-	int i, j;
+	int n, m;
 
-	for (i = 19; i < 34; i++)
+	for (n = 48 ; n <= 56; i++)
 	{
-		for (j = 20; j <= 35; j++)
+		for (m = 49; j <= 57; j++)
 		{
-			if (j > i)
+			if (m > n)
 			{
-				putchar(i + '0');
-				putchar(j + '0');
-				if (i != 34 ||  j != 35)
+				putchar(n + '0');
+				putchar(m + '0');
+				if (n != 56 ||  m != 57)
 				{
 					putchar(',');
 					putchar(' ');
