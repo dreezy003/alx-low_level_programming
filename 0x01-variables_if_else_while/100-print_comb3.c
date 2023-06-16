@@ -9,7 +9,7 @@ int main(void)
 	int i;
 	int j;
 
-	for (i = 10; i <= 19; i++)
+	for (i = 19; i <= 34; i++)
 	{
 		for (j = 20; j <= 35; j++)
 		{
@@ -17,7 +17,7 @@ int main(void)
 			{
 				putchar(i);
 				putchar(j);
-				if (i != 34 ||  j != 36)
+				if (i != 34 ||  j != 35)
 				{
 					putchar(',');
 					putchar(' ');
