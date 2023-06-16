@@ -1,13 +1,11 @@
 #include <stdio.h>
 /**
  * main - entry point
- *
  * Return: alway returns 0
  */
 int main(void)
 {
-	int i;
-	int j;
+	int i, j;
 
 	for (i = 19; i <= 34; i++)
 	{
