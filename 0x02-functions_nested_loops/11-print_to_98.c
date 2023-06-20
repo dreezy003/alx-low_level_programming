@@ -3,29 +3,38 @@
 #include <stdio.h>
 
 void print_to_98(int n)
-{
-	int i;
 
-	if (n > 98)
+{
+	if (n <= 98)
 	{
-		for (i = n; i >= 98; i--)
-		{
-			printf("%d", i);
-			if (i != 98)
-			{
-				printf(", ");
-			}
-		}
-	} else
+	for (; n <= 98; n++)
 	{
-		for (i = n; i <= 98; i++)
-		{
-			printf("%d", i);
-			if (i != 98)
-			{
-				printf(", ");
-			}
-		}
-	}
+	if (n == 98)
+	{
+	printf("%d", n);
 	printf("\n");
+	break;
+	}
+	else
+	{
+	printf("%d, ", n);
+	}
+	}
+	}
+	else
+	{
+	for (; n >= 98; n--)
+	{
+	if (n == 98)
+	{
+	printf("%d", n);
+	printf("\n");
+	break;
+	}
+	else
+	{
+	printf("%d, ", n);
+	}
+	}
+	}
 }
