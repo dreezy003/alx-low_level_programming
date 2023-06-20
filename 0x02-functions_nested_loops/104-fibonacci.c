@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
  * main - main function
- *
- * Return: nothing
+ * Return: Always 0.
  */
 int main(void)
 {
