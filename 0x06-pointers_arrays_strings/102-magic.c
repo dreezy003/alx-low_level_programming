@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-/**
- * main - Entry point
- * Return: Always 0 (success)
- */
-
 int main(void)
 {
 	int n;
@@ -15,7 +10,7 @@ int main(void)
 	p = &n;
   /*
    * write your line of code here...
-   * Remember:
+   * main - Entry point
    * - you are not allowed to use a
    * - you are not allowed to modify p
    * - only one statement
