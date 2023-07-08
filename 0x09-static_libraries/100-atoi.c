@@ -6,38 +6,20 @@
  */
 int _atoi(char *s)
 {
-	int i;
-	int np = 0;
-	int c;
-	int d = 1;
-	int num = 0;
+	int sig = 1, a = 0;
+	unsigned int unsig = 0;
 
-	for (i = 0; i < _strlen(s); i++)
+	while (!(s[a] <= '9' && s[a] >= '0') && s[a] != '\0')
 	{
-		if (!(s[i] >= '0' && s[i] <= '9') && c > 0)
-			break;
-		if (s[i] == '-')
-			np--;
-		if (s[i] == '+')
-			np++;
-		if (s[i] >= '0' && s[i] <= '9')
-		{
-			c++;
-		}
+		if (s[a] == '-')
+			sig *= -1;
+		a++;
 	}
-	while (c > 0)
+	while (s[a] <= '9' && (s[a] >= '0' && s[a] != '\0'))
 	{
-		num += ((s[i - 1] - '0') * d);
-		i--;
-		c--;
-		d *= 10;
+		unsig = (unsig * 10) + (s[a] - '0');
+		a++;
 	}
-	if (np >= 0)
-	{
-		num *= 1;
-	} else
-	{
-		num *= -1;
-	}
-	return (num);
+	unsig *= sig;
+	return (unsig);
 }
