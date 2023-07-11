@@ -1,6 +1,6 @@
-#include <stdlib.h>
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * helper - Entry
  * @word: count number of words in a string
